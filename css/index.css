@@ -1,0 +1,65 @@
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--primary-400);
+}
+
+#app {
+    --shadow-offset: 1rem;
+    --invert-shadow-offset: calc(var(--shadow-offset) / -2);
+
+    margin: 0 2rem;
+    padding: 2rem;
+    position: relative;
+    /* border-radius: 0.75rem; */
+    background-color: var(--secondary-400);
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--secondary-500);
+    transform: translate(
+        var(--invert-shadow-offset),
+        var(--invert-shadow-offset)
+    );
+}
+
+/* #app::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.75rem;
+    background-color: var(--secondary-500);
+    transform: translate(0.75rem, 0.75rem);
+    z-index: -1;
+} */
+
+#app h1 {
+    margin: 0;
+}
+
+#app p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.125rem;
+    color: var(--primary-600);
+}
+
+#app input {
+    margin: 2rem 0 0 0;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+}
+
+#app button {
+    margin: 1rem 0 0 0;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+
+    background-color: var(--primary-500);
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}

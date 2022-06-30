@@ -1,0 +1,23 @@
+:root {
+    --primary-400: #afb6c4;
+    --primary-500: #324c60;
+    --primary-600: #081b2e;
+    --secondary-400: #fcefd3;
+    --secondary-500: #f5c49b;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
