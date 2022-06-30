@@ -26,5 +26,5 @@ export const $ = (query) => document.querySelector(query);
 export const createInterval = (delay) => {
     return setInterval(() => {
         sendNotification(randomStatement());
-    }, delay * 1000);
+    }, delay * 1000 * 60);
 };
